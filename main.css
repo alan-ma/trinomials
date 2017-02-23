@@ -41,3 +41,9 @@ input, button {
 table {
 	text-align: center;
 }
+a {
+	color: inherit;
+}
+a:hover {
+	color: #AAA;
+}
