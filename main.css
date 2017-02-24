@@ -35,6 +35,10 @@ input, button {
 	cursor: pointer;
 	background-color: #F50011;
 }
+#answer_button:hover {
+	cursor: pointer;
+	background-color: #23A2F9;
+}
 table {
 	text-align: center;
 }
@@ -43,6 +47,18 @@ a {
 }
 a:hover {
 	color: #AAA;
+}
+td {
+	padding: 3px;
+}
+#data td {
+	padding: 10px 25px;
+}
+#answers {
+	opacity: 0;
+}
+#answers sup {
+	color: white;
 }
 @media only screen and (max-width: 632px) {
 	#container {

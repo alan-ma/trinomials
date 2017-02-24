@@ -12,7 +12,7 @@
 		<h3>By: <a href="https://github.com/alan-ma" target="_blank">Alan Ma</a></h3>
 		<h2>Customization</h2>
 		<h4>Specify constant bounds and number of trinomials.</h4>
-		<table>
+		<table id="customization">
 			<tr>
 				<td>Bound</td>
 				<td>a</td>
@@ -46,12 +46,27 @@
 			<option value="100">100</option>
 		</select>
 		<br>
-		<button onclick="generate()" id="generate">Generate Trinomials</button>
+		<button onclick="neo_generate()" id="generate">Generate Trinomials</button>
 		<i>Note: Click repeatedly to add to list.</i>
 		<br>
+		<button onclick="toggle_answers()" id="answer_button">Show Answers</button>
+		<i>Note: Answers may include common factors.</i>
+		<br>
 		<button onclick="clear_all()" id="clear">Clear all</button>
-		<h2>Trinomials</h2>
-		<h4>Click 'Generate Trinomials' to see.</h4>
-		<ol id="trinomials"></ol>
+		<br>
+		<table id="data">
+			<tr>
+				<td><h2>Trinomials</h2><h4>Click 'Generate Trinomials' to see.</h4></td>
+				<td><h2>Answers</h2><h4>Click 'Show Answers' to see.</h4></td>
+			</tr>
+			<tr>
+				<td>
+					<ol id="trinomials"></ol>
+				</td>
+				<td>
+					<ol id="answers"></ol>
+				</td>
+			</tr>
+		</table>
 	</div>
 </body>
